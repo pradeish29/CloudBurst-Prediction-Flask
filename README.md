@@ -23,3 +23,69 @@ cloud_burst_prediction/
 ├── README.md
 ├── requirements.txt
 └── config.py
+
+- **app.py**: Main application file that contains the Flask routes and logic for fetching weather data and making predictions.
+- **model/random_forest_model.pkl**: Serialized pre-trained Random Forest model.
+- **static/css/styles.css**: Stylesheet for the HTML pages.
+- **templates/index.html**: Main HTML page to display the weather data and prediction results.
+- **README.md**: This file, providing an overview and setup instructions.
+- **requirements.txt**: List of required Python packages.
+- **config.py**: Configuration file for API keys and other settings.
+
+## Setup Instructions
+
+### Prerequisites
+- Python 3.7 or higher
+- pip (Python package installer)
+
+### Installation
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/cloud_burst_prediction.git
+    cd cloud_burst_prediction
+    ```
+
+2. **Create and activate a virtual environment**:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. **Install the required packages**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Configure API keys**:
+   - Obtain an API key from a weather data provider (e.g., OpenWeatherMap).
+   - Create a `config.py` file in the root directory with the following content:
+     ```python
+     WEATHER_API_KEY = 'your_api_key_here'
+     ```
+
+### Running the Application
+
+1. **Run the Flask app**:
+    ```bash
+    python app.py
+    ```
+
+2. **Access the application**:
+   - Open your web browser and navigate to `http://127.0.0.1:5000`.
+
+## Usage
+
+1. Upon accessing the web application, it will automatically fetch the current weather data using the configured weather API.
+2. The fetched data will be used by the pre-trained Random Forest model to predict the likelihood of a cloud burst.
+3. The prediction results and current weather conditions will be displayed on the main page.
+
+## Contributing
+Feel free to submit issues or pull requests if you have suggestions or improvements.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+By following these instructions, you should be able to set up and run the cloud burst prediction web application locally. Enjoy predicting cloud bursts with real-time weather data!
