@@ -56,14 +56,7 @@ cloud_burst_prediction/
     ```bash
     pip install -r requirements.txt
     ```
-
-4. **Configure API keys**:
-   - Obtain an API key from a weather data provider (e.g., OpenWeatherMap).
-   - Create a `config.py` file in the root directory with the following content:
-     ```python
-     WEATHER_API_KEY = 'your_api_key_here'
-     ```
-
+    
 ### Running the Application
 
 1. **Run the Flask app**:
