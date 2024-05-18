@@ -10,3 +10,16 @@ This project is a web application designed to predict cloud bursts using a pre-t
 
 ## Project Structure
 
+cloud_burst_prediction/
+│
+├── app.py
+├── model/
+│   └── random_forest_model.pkl
+├── static/
+│   └── css/
+│       └── styles.css
+├── templates/
+│   └── index.html
+├── README.md
+├── requirements.txt
+└── config.py
